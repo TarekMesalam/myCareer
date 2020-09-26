@@ -1,0 +1,23 @@
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: $mainColor;
+}
+
+.navbar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+    .navbar-toggler{
+        border: 0;
+        outline: none;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    .nav-link {
+        font-family: 'Montserrat', sans-serif;
+    }
+}

@@ -1,0 +1,94 @@
+.single-job {
+    min-height: 100vh;
+    .detail-head {
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        letter-spacing: 1px;
+        &.pre-line {
+            position: relative;
+            padding-left: 25px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 22px;
+                height: 2px;
+                background-color: $orangeColor;
+            }
+        }
+    }
+    .bg-gray {background-color: $gray;}
+    .dark-text {color: $dark_text !important;}
+    .job-details {
+        .title {
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .category {
+                font-size: 0.875rem;
+            }
+        }
+        .details {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .skill {
+            display: inline-block;
+            background-color: $orangeColor;
+            padding: 3px 8px;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0.65rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    .job-description {
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .job-requirment {
+        .requirment {
+            margin-left: 10px;
+        }
+    }
+
+    .job-description, 
+    .job-requirment {
+        .content {
+            padding-left: 25%;
+            margin-top: 1.2rem;
+            @media screen and (max-width: 500px) {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .job-map {
+        .apply {
+            padding: 1.2rem 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-apply {
+            padding: .5rem 2.75rem;
+            border-radius: 0;
+            background-color: $mainColor;
+            color: #fff;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        #map {
+            width: 100%;
+            min-height: 422px;
+        }
+    }
+}
