@@ -37,7 +37,13 @@ class Job extends Model
         ];
     }
 
-    public static function activeJobs(){
+    public static function activeJobs($paginate=null){
+        if ($paginate){
+            return Job::where('status', 'active')
+                ->where('start_date', '<=', Carbon::now()->format('Y-m-d'))
+                ->where('end_date', '>=', Carbon::now()->format('Y-m-d'))
+                ->paginate($paginate);
+        }
         return Job::where('status', 'active')
             ->where('start_date', '<=', Carbon::now()->format('Y-m-d'))
             ->where('end_date', '>=', Carbon::now()->format('Y-m-d'))

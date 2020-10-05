@@ -51,6 +51,7 @@ class FrontBaseController extends Controller
     {
         parent::__construct();
         $this->global = CompanySetting::first();
+        $this->setting = CompanySetting::first();
         $this->companyName = $this->global->company_name;
 
         $this->frontTheme = ThemeSetting::first();

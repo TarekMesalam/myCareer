@@ -1,8 +1,30 @@
+.navbar-light .navbar-nav .nav-link {
+    color: $mainColor;
+    opacity: 1;
+    &:hover {
+        color: $orangeColor;
+    }
+}
+
 .navbar-light .navbar-nav .active>.nav-link, 
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show>.nav-link {
-    color: $mainColor;
+    color: $orangeColor;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.login-thumb {
+    color: $mainColor !important;
+    path {
+        transition: 0.2s ease-in-out;
+    }
+    &:hover {
+        color: $orangeColor !important;
+        path {
+            fill: $orangeColor;
+        }
+    }
 }
 
 .navbar {
@@ -15,6 +37,9 @@
         outline: none;
         &:hover {
             color: $mainColor;
+            svg {
+                fill: $orangeColor;
+            }
         }
     }
     .nav-link {

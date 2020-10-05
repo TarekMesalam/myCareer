@@ -10,24 +10,24 @@
         </button>
 
         <div class="collapse navbar-collapse" id="NCMSNavbar">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto menu_head" >
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{url('/')}}">{{__('app.Home')}} <span class="sr-only">({{__('app.current')}})</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Jobs</a>
+                    <a class="nav-link" href="{{route('jobs.jobs')}}">{{__('app.Jobs')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Technologies</a>
+                    <a class="nav-link" href="#Technologies">{{__('app.Technolog')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Graduates</a>
+                    <a class="nav-link down_why" href="#why_us"> {{__('app.Benefits')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Benefits</a>
+                    <a class="nav-link" href="#Graduates">{{__('app.Graduates')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="{{url('/contact_us')}}">{{__('app.Contact us')}}</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item active pt-2">
-                    <a class="nav-link" href="#">AR</a>
+                    <a class="nav-link" href="{{route('lang',Session::get('locale') == 'en'? 'ar':'en')}}">{{__('app.AR')}}</a>
                 </li>
             </ul>
         </div>

@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e75ae572-36bd-4eae-a805-cb6b21f6d29f" name="Default Changelist" comment="" />
+    <list default="true" id="e75ae572-36bd-4eae-a805-cb6b21f6d29f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Language.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/jobs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontBaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontBaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontJobsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontJobsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Job.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JobLocation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JobLocation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/dist/css/adminlte.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/dist/css/adminlte.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/dist/css/adminlte.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/dist/css/adminlte.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/plugins/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/_front-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/_front-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/_globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/_globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/_single-job-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/_single-job-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/new_assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/new_assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/job-apply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/job-apply.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/job-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/job-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sections/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sections/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sections/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sections/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/.ignore_locales" beforeDir="false" afterPath="$PROJECT_DIR$/storage/.ignore_locales" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ptjz6NKurYMMXQjHKGfkdrL7hkt6XYjgQvLfiBfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -136,11 +193,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Middleware" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\my_carear\myCareer\myCareer\app\Http\Middleware" />
       <recent name="C:\laragon\www\my_carear\myCareer\public\assets\images" />
     </key>
   </component>
@@ -159,13 +217,30 @@
       <option name="presentableId" value="Default" />
       <updated>1601054405564</updated>
       <workItem from="1601054406621" duration="24955000" />
+      <workItem from="1601799848254" duration="1320000" />
+      <workItem from="1601807640229" duration="8110000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1601799891592">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1601799891592" />
     <state x="794" y="448" key="NewPhpFileDialog" timestamp="1601137608529">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -174,9 +249,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="229" width="587" height="614" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601144966896" />
-    <state x="616" y="178" width="672" height="678" key="search.everywhere.popup" timestamp="1601140040867">
+    <state x="616" y="178" width="672" height="678" key="search.everywhere.popup" timestamp="1601851421050">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="178" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601140040866" />
+    <state x="616" y="178" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601851421050" />
   </component>
 </project>

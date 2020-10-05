@@ -13,6 +13,12 @@ use App\CompanySetting;
 |
 */
 
+Route::get('/lang/{locale}', function ($locale) {
+    App::setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('lang');
+
 $this->global = CompanySetting::first();
 if ($this->global != null) {
     Route::get('/',['middleware'=>['NeedApplicationInstall'],function () {
@@ -29,7 +35,11 @@ Route::group(
     ['namespace' => 'Front', 'as' => 'jobs.'],
     function () {
         Route::get('/', 'FrontJobsController@jobOpenings')->name('jobOpenings');
+        Route::get('/contact_us', function (){
+            return view('contact');
+        })->name('contact');
         Route::get('/job/{slug}', 'FrontJobsController@jobDetail')->name('jobDetail');
+        Route::get('/jobs', 'FrontJobsController@jobs')->name('jobs');
         Route::get('/job/{slug}/apply', 'FrontJobsController@jobApply')->name('jobApply');
         Route::post('/job/saveApplication', 'FrontJobsController@saveApplication')->name('saveApplication');
     }

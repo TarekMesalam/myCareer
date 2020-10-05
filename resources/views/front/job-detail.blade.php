@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{url('/')}}/front/new_assets/css/slick.css">
     <link rel="stylesheet" href="{{url('/')}}/front/new_assets/css/slick-theme.css">
     <link rel="stylesheet" href="{{url('/')}}/front/new_assets/css/style.css">
+    <link rel="stylesheet" href="{{url('/')}}/front/new_assets/css/style{{Session::get('locale') == 'en'? '':'.rtl'}}.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -21,7 +22,7 @@
         <div class="container">
             <nav aria-label="breadcrumb" class="m-0 p-0">
                 <ol class="breadcrumb m-0 d-flex align-items-center">
-                    <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{url('/')}}">{{__('app.Home')}}</a></li>
                     <li class="breadcrumb-item"><a href="#">{{$job->category->name}}</a></li>
                     <li class="breadcrumb-item active">{{$job->title}}</li>
                 </ol>
@@ -36,17 +37,17 @@
                         <h1 class="detail-head">{{$job->title}}</h1>
                         <h2 class="category dark-text">{{$job->category->name}}</h2>
                     </div>
-                    <ul class="details m-0 bg-gray">
+                    <ul class="details m-10 bg-gray">
                         <li class="mb-4">
-                            <h3 class="detail-head">Start Date</h3>
+                            <h3 class="detail-head">{{__('app.Start Date')}}</h3>
                             <span class="dark-text">{{$job->start_date->format('Y-M-D')}}</span>
                         </li>
                         <li class="mb-4">
-                            <h3 class="detail-head">End Date</h3>
+                            <h3 class="detail-head">{{__("app.End Date")}}</h3>
                             <span class="dark-text">{{$job->end_date->format('Y-M-D')}}</span>
                         </li>
                         <li class="mb-4">
-                            <h3 class="detail-head text-center">Skills</h3>
+                            <h3 class="detail-head text-center">{{__('app.Skills')}}</h3>
                             <div class="row pt-2">
                                 @foreach($job->skills as $skill)
                                     <div class="col-6 text-center">
@@ -73,14 +74,12 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-6">
-                <div class="job-description">
-                    <h3 class="detail-head pre-line">Job Description:</h3>
-                    <div class="content dark-text">
-                        <p>{!! $job->job_description !!}</p>
-                    </div>
+                <div class="job-details">
+                    <h3 class="detail-head pre-line">{{__('app.Job Description:')}}</h3>
+                        {!! $job->job_description !!}
                 </div>
-                <div class="job-requirment">
-                    <h3 class="detail-head pre-line">Job Requirment:</h3>
+                <div class="job-requirment" style="margin-top: 50px">
+                    <h3 class="detail-head pre-line">{{__('app.Job Requirment:')}}</h3>
                     {!! $job->job_requirement !!}
                 </div>
             </div>
@@ -88,10 +87,12 @@
                 <div class="job-map">
                     <div class="apply bg-gray text-center">
                         <a href="{{ route('jobs.jobApply', $job->slug) }}" class="btn btn-apply text-uppercase">
-                            Apply Now
+                            {{__('app.Apply Now')}}
                         </a>
                     </div>
-                    <div id="map" class="bg-gray"></div>
+                    <div id="map" class="bg-gray">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.8956573069286!2d47.09205968460757!3d24.384932970155468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f8c507ff57c03%3A0x85765d831f6d4387!2sNCMS!5e0!3m2!1sar!2seg!4v1601902529265!5m2!1sar!2seg" width="250" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

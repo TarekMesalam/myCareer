@@ -34,6 +34,13 @@ class FrontJobsController extends FrontBaseController
         $this->categories = JobCategory::all();
         return view('front.job-openings', $this->data);
     }
+    public function jobs()
+    {
+        $this->jobs = Job::activeJobs(15);
+        $this->locations = JobLocation::all();
+        $this->categories = JobCategory::all();
+        return view('front.jobs', $this->data);
+    }
 
     public function jobDetail($slug)
     {

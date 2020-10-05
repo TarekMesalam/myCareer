@@ -71,6 +71,14 @@
         }
     }
 
+    .social {
+        a:hover {
+            svg .path {
+                fill: $orangeColor;
+            }
+        }
+    }
+
     .job-map {
         .apply {
             padding: 1.2rem 1rem;
@@ -83,7 +91,8 @@
             color: #fff;
             transition: 0.2s ease-in-out;
             &:hover {
-                opacity: 0.8;
+                background-color: $orangeColor;
+                color: $mainColor;
             }
         }
         #map {
